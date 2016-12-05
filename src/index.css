@@ -135,16 +135,16 @@ h1 {
   justify-content: space-between;
 }
 
-#main .thumbnails > .project {
-  width: calc(100% / 3.4);
-}
-
 #main .thumbnails .project {
+  width: calc(100% / 3.2);
   position: relative;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.075);
   overflow: hidden;
   cursor: pointer;
+  text-align: center;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  margin: 0 0 2em 0;
 }
 
 #main .thumbnails .project .overlay {
@@ -186,19 +186,14 @@ h1 {
   color: black;
 }
 
-#main .thumbnails > .project .infos {
-  text-align: center;
-  border: solid 1px rgba(255, 255, 255, 0.25);
-}
-
-#main .thumbnails > .project img {
+#main .thumbnails .project img {
   display: block;
   width: 100%;
 }
 
-#main .thumbnails > .infos > h3{
+#main .thumbnails .project h3 {
   margin: 0;
-  padding: 0.5em;
+  padding: 0.8em;
 }
 
 @media screen and (max-width: 1280px){
@@ -222,6 +217,10 @@ h1 {
 
 @media screen and (max-width: 980px) {
 
+  #main .thumbnails .project h3{
+    font-size: 0.8em;
+  }
+
   h1 {
     font-size: 1.5em;
   }
@@ -240,6 +239,30 @@ h1 {
 
   #header .icons li a::before {
     font-size: 1.05em;
+  }
+
+  #main .thumbnails .project {
+    width: calc(100% / 2.1);
+    margin: 0 0 2em 0 !important;
+  }
+
+  #main .thumbnails .project h3 {
+    font-size: 1em;
+    padding: 1em;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  #main .thumbnails .project {
+    width: 100%;
+    margin: 0 0 2em 0 !important;
+  }
+
+  #main .thumbnails .project h3 {
+    font-size: 1em;
+    padding: 1em;
   }
 
 }

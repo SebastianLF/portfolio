@@ -35,9 +35,7 @@ class Project extends Component {
             <a href="#" target="_blank" type="button" name="code">code</a>
           </div>
           <img src={project1} alt="" />
-          <div className="infos">
-            <h3>Voting app</h3>
-          </div>
+          <h3>Voting app</h3>
       </div>
     )
   }
@@ -64,16 +62,9 @@ class App extends Component {
         <section id="main">
           <section className="thumbnails">
             <Project />
-            <div className="">
-              <a href="#">
-                <h3>Test</h3>
-              </a>
-            </div>
-            <div className="">
-              <a href="#">
-                <h3>Test</h3>
-              </a>
-            </div>
+            <Project />
+            <Project />
+            <Project />
           </section>
         </section>
         <footer id="footer">
