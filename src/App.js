@@ -1,49 +1,56 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
+import './normalize.css';
 import './index.css';
 import './App.css';
 import 'font-awesome/css/font-awesome.css';
 
 import avatar from './avatar.jpg';
-import project1 from './01.jpg';
+
+const Overlay = (props) => {
+  const overlayClass = cx('overlay', {'active': this.state.hover });
+
+  return (
+    <div className={overlayClass}>
+      <a href="#" target="_blank" type="button" name="demo">demo</a>
+      <a href="#" target="_blank" type="button" name="code">code</a>
+    </div>
+  )
+}
+
+import javascript from './javascript.svg';
+import react from './react.svg';
+import node from './node.svg';
+import mongodb from './mongodb.svg';
 
 class Project extends Component {
 
-  constructor() {
-    super();
-    this.state = { hover: false }
-  }
-
-  hideOverlay(e) {
-    this.setState({
-      hover: false
-    })
-  }
-
-  displayOverlay(e) {
-    this.setState({
-      hover: true
-    })
-  }
-
   render() {
-    const overlayClass = cx('overlay', {'active': this.state.hover });
     return (
-      <div onMouseEnter={this.displayOverlay.bind(this)} onMouseLeave={this.hideOverlay.bind(this)} className="project">
-          <div className={overlayClass}>
-            <a href="#" target="_blank" type="button" name="demo">demo</a>
-            <a href="#" target="_blank" type="button" name="code">code</a>
-          </div>
-          <img src={project1} alt="" />
+      <section className="project">
           <h3>Voting app</h3>
-      </div>
+          <ul className="frameworks">
+            <li><img src={javascript} alt="javascript" /></li>
+            <li><img src={react} alt="react" /></li>
+            <li><img src={node} alt="node" /></li>
+          </ul>
+          <ul className="tags">
+            <li>es6</li>
+            <li>react-router</li>
+            <li>redux-thunk</li>
+            <li>webpack</li>
+            <li>heroku</li>
+          </ul>
+          <ul className="links">
+            <a href="" alt="demo link">demo</a>
+            <a href="" alt="code link">code</a>
+          </ul>
+      </section>
     )
   }
 }
 
 class App extends Component {
-
-
 
   render() {
     return (
