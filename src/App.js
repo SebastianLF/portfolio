@@ -1,57 +1,75 @@
 import React, { Component } from 'react';
+import Projects from './Projects'
 import cx from 'classnames';
-import './normalize.css';
-import './index.css';
+
+// css
 import './App.css';
 import 'font-awesome/css/font-awesome.css';
 
+// img
 import avatar from './avatar.jpg';
 
-const Overlay = (props) => {
-  const overlayClass = cx('overlay', {'active': this.state.hover });
-
-  return (
-    <div className={overlayClass}>
-      <a href="#" target="_blank" type="button" name="demo">demo</a>
-      <a href="#" target="_blank" type="button" name="code">code</a>
-    </div>
-  )
-}
-
-import javascript from './javascript.svg';
-import react from './react.svg';
-import node from './node.svg';
-import mongodb from './mongodb.svg';
-
-class Project extends Component {
-
-  render() {
-    return (
-      <section className="project">
-          <h3>Voting app</h3>
-          <ul className="frameworks">
-            <li><img src={javascript} alt="javascript" /></li>
-            <li><img src={react} alt="react" /></li>
-            <li><img src={node} alt="node" /></li>
-          </ul>
-          <ul className="tags">
-            <li>es6</li>
-            <li>react-router</li>
-            <li>redux-thunk</li>
-            <li>webpack</li>
-            <li>heroku</li>
-          </ul>
-          <ul className="links">
-            <a href="" alt="demo link">demo</a>
-            <a href="" alt="code link">code</a>
-          </ul>
-      </section>
-    )
-  }
-  
-}
 
 class App extends Component {
+
+  constructor() {
+      super();
+      this.state = {
+        projects: [
+          {
+            title: 'sondages app',
+            frameworks: ['react', 'node', 'redux'],
+            tags: ['mongodb', 'es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'cookies-session'],
+            demo: '',
+            code: 'https://github.com/profoundhub/FCC-Voting-App'
+          },
+          {
+            title: 'coordination nocturne',
+            frameworks: ['react', 'node', 'redux'],
+            tags: ['mongodb', 'es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'jwt'],
+            demo: '',
+            code: 'https://github.com/zelol/nightlifeapp'
+          },
+          {
+              title: 'Le jeu de la vie',
+              frameworks: ['react'],
+              tags: ['mongodb', 'es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'jwt'],
+              code: 'http://codepen.io/zelol/pen/ORAmbd',
+              demo: 'http://codepen.io/zelol/full/ORAmbd',
+            },
+            {
+              title: 'Prévisualisateur markdown',
+              frameworks: ["react"],
+              tags: ['es6', 'markdown'],
+              code: 'https://codepen.io/zelol/pen/QKJoKv',
+              demo: 'https://codepen.io/zelol/full/QKJoKv',
+            },
+          {
+              title: 'boite à recettes',
+              frameworks: ['react'],
+              tags: ['es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'jwt'],
+              code: 'https://codepen.io/zelol/pen/VKVkyq',
+              demo: 'https://codepen.io/zelol/full/VKVkyq'
+
+            },
+            {
+              title: 'classement campeurs',
+              frameworks: [],
+              tags: ['es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'jwt'],
+              code: 'http://codepen.io/zelol/pen/QKVrKZ',
+              demo: 'http://codepen.io/zelol/full/QKVrKZ'
+            },
+            {
+              title: 'Bar Chart: PIB des USA',
+              frameworks: ['d3'],
+              tags: ['es6', 'svg', 'd3 v4'],
+              code: 'http://codepen.io/zelol/pen/EgzpjV',
+              demo: 'http://codepen.io/zelol/full/EgzpjV'
+
+            }
+        ]
+      }
+  }
 
   render() {
     return (
@@ -67,14 +85,7 @@ class App extends Component {
             <li><a href="#" className="fa fa-github"></a></li>
           </ul>
         </header>
-        <section id="main">
-          <section className="thumbnails">
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-          </section>
-        </section>
+        <Projects list={this.state.projects}/>
         <footer id="footer">
           <p>© Sebastien LEON FLORES. All rights reserved. Inspired by TEMPLATED.CO/VISUALIZE</p>
         </footer>
