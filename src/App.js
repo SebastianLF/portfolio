@@ -17,55 +17,61 @@ class App extends Component {
       this.state = {
         projects: [
           {
-            title: 'sondages app',
+            title: 'Application de sondages',
             frameworks: ['react', 'node', 'redux'],
             tags: ['mongodb', 'es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'cookies-session'],
             demo: '',
             code: 'https://github.com/profoundhub/FCC-Voting-App'
           },
           {
-            title: 'coordination nocturne',
+            title: 'Coordination Nocturne',
             frameworks: ['react', 'node', 'redux'],
             tags: ['mongodb', 'es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'jwt'],
             demo: '',
             code: 'https://github.com/zelol/nightlifeapp'
           },
           {
-              title: 'Le jeu de la vie',
+              title: 'Le Jeu de la Vie',
               frameworks: ['react'],
-              tags: ['mongodb', 'es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'jwt'],
+              tags: ['es6', 'babel', 'sass', 'normalize', 'autoprefixer'],
               code: 'http://codepen.io/zelol/pen/ORAmbd',
               demo: 'http://codepen.io/zelol/full/ORAmbd',
             },
             {
-              title: 'Prévisualisateur markdown',
+              title: 'Prévisualisateur Markdown',
               frameworks: ["react"],
-              tags: ['es6', 'markdown'],
+              tags: ['es6', 'babel', 'sass', 'normalize', 'autoprefixer'],
               code: 'https://codepen.io/zelol/pen/QKJoKv',
               demo: 'https://codepen.io/zelol/full/QKJoKv',
             },
           {
-              title: 'boite à recettes',
+              title: 'Boite à Recettes',
               frameworks: ['react'],
-              tags: ['es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'jwt'],
+              tags: ['es6', 'babel', 'sass', 'normalize', 'autoprefixer'],
               code: 'https://codepen.io/zelol/pen/VKVkyq',
               demo: 'https://codepen.io/zelol/full/VKVkyq'
 
             },
             {
-              title: 'classement campeurs',
+              title: 'Classement Campeurs',
               frameworks: [],
-              tags: ['es6', 'react-router', 'redux-thunk', 'webpack', 'express', 'passport', 'jwt'],
+              tags: ['es6', 'babel', 'sass', 'normalize', 'autoprefixer'],
               code: 'http://codepen.io/zelol/pen/QKVrKZ',
               demo: 'http://codepen.io/zelol/full/QKVrKZ'
             },
             {
               title: 'Bar Chart: PIB des USA',
               frameworks: ['d3'],
-              tags: ['es6', 'svg', 'd3 v4'],
+              tags: ['es6', 'svg', 'v4'],
               code: 'http://codepen.io/zelol/pen/EgzpjV',
               demo: 'http://codepen.io/zelol/full/EgzpjV'
-
+            },
+            {
+              title: 'Portfolio',
+              frameworks: ['react'],
+              tags: ['es6', 'create-react-app', 'BEM'],
+              code: 'https://github.com/zelol/portfolio',
+              demo: 'http://codepen.io/zelol/full/EgzpjV'
             }
         ]
       }

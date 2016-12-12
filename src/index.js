@@ -4,6 +4,7 @@ import App from './App';
 
 // css
 import './normalize.css';
+import './reset.css'
 import './index.css';
 
 ReactDOM.render(

@@ -8,24 +8,27 @@ class Project extends Component {
 
   render() {
 
-    const codeLinkDisabled = cx({
-      'disabled': !this.props.demo
-    });
+    const codeLinkDisabled = cx(
+      'project__demolink',
+      {
+        'project__demolink--disabled': !this.props.demo
+      }
+    );
 
     return (
       <section className="project">
-          <h3>{this.props.title}</h3>
-          <ul className="frameworks">
+          <h3 className="project__title">{this.props.title}</h3>
+          <ul className="project__frameworks">
             { this.props.frameworks && this.props.frameworks
-              .map( framework => <li><img src={require(`./${framework}.svg`)} alt={`logo ${framework}`} width={framework === 'mongodb' ? '200px !important' : ''}/></li> )
-              .concat(<li><img src={require(`./javascript.svg`)} alt={`logo javascript`} /></li>)}
+              .map( framework => <li className="project__framework"><img className="project__logo" src={require(`./${framework}.svg`)} alt={`logo ${framework}`}/></li> )
+              .concat(<li className="project__framework"><img className="project__logo" src={require(`./javascript.svg`)} alt={`logo javascript`} /></li>)}
           </ul>
-          <ul className="tags">
-            { this.props.tags && this.props.tags.map( tag => <li>{tag}</li> ) }
+          <ul className="project__tags">
+            { this.props.tags && this.props.tags.map( tag => <li className="project__tag">{tag}</li> ) }
           </ul>
-          <ul className="links">
+          <ul className="project__links">
             <a className={codeLinkDisabled} href={this.props.demo} target="_blank" alt="demo link">demo</a>
-            <a href={this.props.code} target="_blank" alt="code link">code</a>
+            <a className="project__codelink" href={this.props.code} target="_blank" alt="code link">code</a>
           </ul>
       </section>
     )
