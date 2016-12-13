@@ -7,6 +7,10 @@
   height: 80px;
 }
 
+.avatar img {
+  width: 200px;
+}
+
 .App-header {
   background-color: #222;
   height: 150px;

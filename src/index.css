@@ -131,10 +131,6 @@ h1 {
 		padding: 2em 0 2em 0;
 	}
 
-  .project {
-    width: calc((100% / 2) - 2%);
-    font-size: 1.3em;
-  }
 }
 
 @media screen and (max-width: 980px) {

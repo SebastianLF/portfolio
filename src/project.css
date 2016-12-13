@@ -49,7 +49,7 @@
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 1em;
+  font-size: 0.9em;
   margin: 0 0 1em 0;
 }
 
@@ -62,6 +62,8 @@
   padding: 0px 1em;
   margin: 0.1em;
   background: #f4f5f6;
+  border: 1px solid rgba(44, 62, 80, 0.1);
+  border-radius: 2px;
 }
 
 .project__links {
@@ -70,6 +72,7 @@
   justify-content: space-around;
   text-transform: uppercase;
   margin: 1.4em 0 0 0;
+  font-size: 0.9em;
 }
 
 .project__demolink {
@@ -78,7 +81,6 @@
   border-radius: 3px;
   border: 2px solid rgba(52, 73, 94, 0.1);
   padding: 0.3em 0.5em;
-  font-size: 0.7em;
   font-weight: 400;
   text-decoration: none;
   color: white;
@@ -91,7 +93,6 @@
   border-radius: 3px;
   border: 2px solid rgba(52, 73, 94, 0.1);
   padding: 0.3em 0.5em;
-  font-size: 0.7em;
   font-weight: 400;
   text-decoration: none;
   color: white;
@@ -116,15 +117,20 @@
   color: rgba(231, 76, 60, 0.8);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1280px){
 
-  #main .thumbnails .project h3{
+  .project {
+    width: calc((100% / 2) - 2%);
     font-size: 1em;
   }
 
-  #main .thumbnails .project .frameworks img {
-    max-width: 40px;
-    max-height: 40px;
+}
+
+@media screen and (max-width: 980px) {
+
+  .project {
+    width: calc((100% / 2) - 2%);
+    font-size: 1em;
   }
 
 }

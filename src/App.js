@@ -7,7 +7,7 @@ import './App.css';
 import 'font-awesome/css/font-awesome.css';
 
 // img
-import avatar from './avatar.jpg';
+import avatar from './moi.jpg';
 
 
 class App extends Component {
@@ -84,8 +84,7 @@ class App extends Component {
           <span className="avatar">
             <img src={avatar} alt="avatar profile" />
           </span>
-          <h1>This is my <strong>portfolio</strong>, a list of multiple projects i participed or
-            created <br/> as a javascript full stack developper.</h1>
+          <h1>Voici mon <strong>portfolio</strong>, vous trouverez un échantillon des projects que j'ai crée ou auxquels<br/> j'ai participé en tant que Développeur full stack orienté javascript.</h1>
           <ul className="icons">
             <li><a href="#" className="fa fa-free-code-camp"></a></li>
             <li><a href="#" className="fa fa-github"></a></li>
