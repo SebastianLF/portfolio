@@ -71,7 +71,7 @@ class App extends Component {
               frameworks: ['react'],
               tags: ['es6', 'create-react-app', 'BEM'],
               code: 'https://github.com/zelol/portfolio',
-              demo: 'http://codepen.io/zelol/full/EgzpjV'
+              demo: 'https://sebastien-leon-flores.herokuapp.com/'
             }
         ]
       }
