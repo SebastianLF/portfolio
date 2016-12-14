@@ -130,21 +130,15 @@
 
   .project {
     width: calc((100% / 2) - 2%);
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
 }
 
 @media screen and (max-width: 736px) {
 
-  #main .thumbnails .project {
-    width: calc(100% / 2.1);
-    margin: 0 0 2em 0 !important;
-  }
-
-  #main .thumbnails .project h3 {
-    font-size: 1em;
-    padding: 1em;
+  .project {
+    width: calc((100% / 2) - 2%);
   }
 
 }
@@ -153,12 +147,6 @@
 
   #main .thumbnails .project {
     width: 100%;
-    margin: 0 0 2em 0 !important;
-  }
-
-  #main .thumbnails .project h3 {
-    font-size: 1em;
-    padding: 1em;
   }
 
 }

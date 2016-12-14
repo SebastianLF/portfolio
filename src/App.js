@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import Projects from './Projects'
+import Header from './Header'
+import Footer from './Footer'
 import cx from 'classnames';
 
 // css
 import './App.css';
 import 'font-awesome/css/font-awesome.css';
-
-// img
-import avatar from './moi.jpg';
-
 
 class App extends Component {
 
@@ -80,20 +78,9 @@ class App extends Component {
   render() {
     return (
       <div id="wrapper">
-        <header id="header">
-          <span className="avatar">
-            <img src={avatar} alt="avatar profile" />
-          </span>
-          <h1>Voici mon <strong>portfolio</strong>, vous trouverez un échantillon des projects que j'ai crée ou auxquels<br/> j'ai participé en tant que Développeur full stack orienté javascript.</h1>
-          <ul className="icons">
-            <li><a href="#" className="fa fa-free-code-camp"></a></li>
-            <li><a href="#" className="fa fa-github"></a></li>
-          </ul>
-        </header>
+        <Header />
         <Projects list={this.state.projects}/>
-        <footer id="footer">
-          <p>© Sebastien LEON FLORES. All rights reserved. Inspired by TEMPLATED.CO/VISUALIZE</p>
-        </footer>
+        <Footer />
       </div>
     );
   }
