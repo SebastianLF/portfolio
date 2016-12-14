@@ -130,7 +130,7 @@
 
   .project {
     width: calc((100% / 2) - 2%);
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
 }
@@ -139,6 +139,7 @@
 
   .project {
     width: calc((100% / 2) - 2%);
+    font-size: 0.8em;
   }
 
 }
