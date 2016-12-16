@@ -31,9 +31,9 @@ class App extends Component {
           {
               title: 'Le Jeu de la Vie',
               frameworks: ['react'],
-              tags: ['es6', 'babel', 'sass', 'normalize', 'autoprefixer'],
-              code: 'http://codepen.io/zelol/pen/ORAmbd',
-              demo: 'http://codepen.io/zelol/full/ORAmbd',
+              tags: ['create-react-app'],
+              code: 'https://github.com/zelol/the_game_of_life',
+              demo: 'https://lit-river-40183.herokuapp.com/',
             },
             {
               title: 'Prévisualisateur Markdown',
